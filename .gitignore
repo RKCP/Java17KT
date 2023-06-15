@@ -1,0 +1,38 @@
+# IntelliJ IDEA
+.idea/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Mac OS
+.DS_Store
+
+# Compiled Java classes
+*.class
+
+# Compiled Kotlin classes
+*.kotlin_module
+
+# Compiled Gradle build output
+build/
+
+# Compiled Maven target directory
+target/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Gradle-specific
+.gradle/
+
+# Maven-specific
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
