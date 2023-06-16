@@ -2,12 +2,6 @@ package com.raphael.demo.patternswitch;
 
 public class PatternSwitchDemo {
 
-    /**
-     * Checks the type of the given object and returns a descriptive message based on the object type.
-     *
-     * @param obj The object to be checked.
-     * @return A string message describing the object type.
-     */
     public static String checkObject(Object obj) {
         return switch (obj) {
             case Tesla t -> "This is a Tesla car with a battery size %s".formatted(t.batterySize());
@@ -21,12 +15,6 @@ public class PatternSwitchDemo {
     }
 
 
-    /**
-     * Checks if the given object represents a classic car based on its age and manufacturer.
-     *
-     * @param obj The object to be checked.
-     * @return {@code true} if the car is a classic, {@code false} otherwise.
-     */
     public static boolean isMyCarAClassic(Object obj) {
         return switch (obj) {
             case Ford f && (f.age() > 20) -> true;
@@ -45,12 +33,13 @@ public class PatternSwitchDemo {
         Nespresso nespresso = new Nespresso("Volutto", 10);
 
         String result = checkObject(tesla);
+        String result2 = checkObject(starbucks);
         System.out.println(result);
 
         boolean classicCar = isMyCarAClassic(mercedes);
         boolean classicCar2 = isMyCarAClassic(tesla);
-        System.out.println(classicCar);
-        System.out.println(classicCar2);
+//        System.out.println(classicCar);
+//        System.out.println(classicCar2);
     }
 
 
